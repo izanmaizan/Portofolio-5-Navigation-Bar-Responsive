@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Navbar Responsive Bootstrap</title>
+</head>
+
+<body class="vh-100 overflow-hidden">
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+    <div class="container">
+      <!-- logo -->
+      <a class="navbar-brand fs-4" href="#">Bootstrap</a>
+      <!-- Toggle Btn -->
+      <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- sidebar -->
+      <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <!-- sidebar header -->
+        <div class="offcanvas-header text-white border-bottom">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Bootstrap</h5>
+          <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <!-- sidebar body -->
+        <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+          <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+            <li class="nav-item mx-2">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#content">Content</a>
+            </li>
+          </ul>
+          <!-- Login / Sign up -->
+          <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+            <a href="#login" class="text-white">Login</a>
+            <a href="#signup" class="text-white text-decoration-none px-3 py-1 rounded-4"
+              style="background-color: #f94ca4;">Sign up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="w-100 vh-100 d-flex flex-column justify-content-center align-items-center text-white fs-1">
+      <h1 style="font-size: 1.5em;">Tampilan Navigation Bar</h1>
+      <h1 style="font-size: 1.3em;">Responsive Bootstrap</h1>
+    </section>
+  </main>
+</body>
+
+</html>
